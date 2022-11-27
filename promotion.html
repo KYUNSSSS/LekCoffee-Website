@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lek Coffee</title>
+    <link rel="stylesheet" href="homepage.css">
+</head>
+<style>
+    .promotion{
+        background-color: #58390d !important;            
+    }  
+  </style>
+<body>
+    <div class="container">
+        <header>
+            <h1><a href="homepage.html"><img src="images/logo.png" alt="" height="100px" width="100px"></a></h1>
+        </header>
+        <nav>
+            <div class="bar">
+                <div class="navbar">
+                    <a href="homepage.html">Home</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Our Menu</button>
+                        <div class="dropdown-content">
+                        <a href="food.html">Food</a>
+                        <a href="drinks.html">Drink</a>
+                        </div>
+                    </div>
+                    <a class="promotion" href="promotion.html">Promotion</a>
+                    <a href="product.html">Our Products</a>
+                    <a href="aboutus.html">About Us</a>
+                </div>
+                <div class="logo">
+                    <a href="homepage.html"><img src="images/logo.png" alt="" height="90px" width="90px"></a>
+                </div>
+            </div>  
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="https://www.facebook.com" id="about"><img src="images/IMG_5826.PNG" alt="" width="30%" height="10%"></a>
+            <a href="https://www.instagram.com" id="blog"><img src="images/iglogo.jpg" alt="" width="55px" height="35px"></a>
+            <a href="https://www.twitter.com" id="projects"><img src="images/twitter.png" alt=""width="70px" height="35px"></a>
+        </div>
+    </div>
+    <h1 align="center">PROMOTIONS</h1>
+        
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              
+                <img src="images/fashion-banner.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+               
+                <img src="images/promotion-banner-png-promotional-banners.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                
+                <img src="images/Student PROMO.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                
+                <img src="images/Couple Promotion.png" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+                
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span> 
+            </div>
+            
+            </div>
+            <br>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+        </script>
+  
+  <footer>
+    <div class="footer">
+        <strong> Copyright&copy;2022. All Rights Reserved.Privacy Policy </strong>
+    </div>
+</footer>
+</body>
+</html>

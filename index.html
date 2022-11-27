@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lek Coffee</title>
+    <link rel="stylesheet" href="homepage.css">
+    <style>
+    .prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 90px 16px 87px 16px;
+    margin-top: -100px;
+    margin-right: 100px;
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 10px 0 0 10px;
+    user-select: none;
+  }
+  .home{
+    background-color: #58390d !important;          
+  }
+  .next {
+    right:-100px;
+    border-radius: 0px 10px 10px 0px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.6);
+    
+  }
+  .prev{
+    left:0px;
+  }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header><br><br><br><br><br></header>
+        <nav>
+            <div class="bar">
+                <a class="home" href="homepage.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Our Menu</button>
+                    <div class="dropdown-content">
+                    <a class="foodmenu" href="food.html">Food</a>
+                    <a class="drinkmenu" href="drinks.html">Drink</a>
+                    </div>
+                </div>
+                <a class="promotion" href="promotion.html">Promotion</a>
+                <a class="product" href="product.html">Our Products</a>
+                <a class="aboutus" href="aboutus.html">About Us</a>
+                <a class="logo" href="homepage.html"><img src="images/logo.png" alt="" height="50px" width="80px"></a>
+            </div>  
+        </nav>
+        <div id="mySidenav" class="sidenav">
+            <a href="https://www.facebook.com" id="about"><img src="images/IMG_5826.PNG" alt="" width="30%" height="10%"></a>
+            <a href="https://www.instagram.com" id="blog"><img src="images/iglogo.jpg" alt="" width="55px" height="35px"></a>
+            <a href="https://www.twitter.com" id="projects"><img src="images/twitter.png" alt=""width="70px" height="35px"></a>
+        </div>
+       
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  
+                    <img src="images/fashion-banner.png" style="width:100%">
+                </div>
+    
+                <div class="mySlides fade">
+                   
+                    <img src="images/promotion-banner-png-promotional-banners.png" style="width:100%">
+                </div>
+    
+                <div class="mySlides fade">
+                    
+                    <img src="images/Student PROMO.png" style="width:100%">
+                </div>
+    
+                <div class="mySlides fade">
+                    
+                    <img src="images/Couple Promotion.png" style="width:100%">
+                </div>
+    
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                    
+            </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                  <span class="dot" onclick="currentSlide(4)"></span> 
+                </div>
+                </div>   
+             
+            
+    </div>
+    <div class="content">
+        <main>
+            <h2>
+                Enjoy Your Time Here
+            </h2>
+            <div class="Options">
+                <a href="food.html"><video src="video/food.mp4" type="video/mp4" loop class="vid" muted  > </a>
+                <a href="drinks.html"><video src="video/drinks.mp4" type="video/mp4"  loop class="vid2" muted   > </a>
+            </div>
+            
+        </main>
+    
+    <script>
+        // Listening to the video element
+        let video = document.querySelector(".vid" ) //vid is class
+        /* Adding the event listeners on the video to play/pause the video. */
+        video.addEventListener("mouseover", function (f) {
+        video.play();
+        })
+        /* Applying the mouse out event to pause the video */
+        video.addEventListener("mouseout", function (f) {
+        video.currentTime=1;
+        video.pause();
+        })
+        
+        let video2 = document.querySelector(".vid2" ) 
+        /* Adding the event listeners on the video to play/pause the video. */
+        video2.addEventListener("mouseover", function (e) {
+        video2.play();
+        })
+        /* Applying the mouse out event to pause the video */
+        video2.addEventListener("mouseout", function (e) {
+        video2.currentTime=1;
+        video2.pause();
+        })
+
+        let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+            showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+            showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            }
+    </script>
+    <footer>
+        <div class="footer">
+            <strong> Copyright&copy;2022. All Rights Reserved.Privacy Policy </strong>
+        </div>
+    </footer>
+</body>
+</html>
