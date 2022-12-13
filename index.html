@@ -6,43 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lek Coffee</title>
     <link rel="stylesheet" href="homepage.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <style>
-    .prev, .next{
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 90px 16px 87px 16px;
-    margin-top: -100px;
-    margin-right: 100px;
-    color: brown;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 10px 0 0 10px;
-    user-select: none;
-  }
-  .home{
-    background-color: #58390d !important;          
-  }
-  .next {
-    right:-100px;
-    border-radius: 0px 10px 10px 0px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover, .next:hover {
-    background-color: rgba(0,0,0,0.6);
-    
-  }
-  .prev{
-    left:0px;
-  }
+        .prev, .next{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 90px 16px 87px 16px;
+        margin-top: -100px;
+        margin-right: 100px;
+        color: brown;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 10px 0 0 10px;
+        user-select: none;
+        }
+        .home{
+            background-color: #E7C1B8;          
+        }
+        .next {
+            right:-100px;
+            border-radius: 0px 10px 10px 0px;
+        }
+        
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.6);
+            
+        }
+        .prev{
+            left:0px;
+        }
+        form{
+            float: left;
+            padding-top: 15px;
+            padding-left: 1%;
+            padding-right: 5px;
+            width: 40%;
+            padding-bottom: 3%;
+        }
+        input[type=email] {
+            width: 50%;
+            padding: 0.75em 200%;
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        input[type=submit] {
+            background-color: #E7C1B8;
+            margin-left: 0.625em;
+        }
+        h4{
+            padding-top: 50px;
+            text-align: left;
+        }
+        strong {
+            font-size: large;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <header><br><br><br><br><br></header>
+        <!-- <header><br><br><br><br></header> -->
         <nav>
             <div class="bar">
                 <a class="home" href="homepage.html">Home</a>
@@ -54,59 +80,66 @@
                     </div>
                 </div>
                 <a class="promotion" href="promotion.html">Promotion</a>
-                <a class="product" href="product.html">Our Products</a>
+                <a class="location" href="location.html">Our Location</a>
                 <a class="aboutus" href="aboutus.html">About Us</a>
-                <a class="logo" href="index.html"><img src="images/logo.png" alt="" height="50px" width="80px"></a>
+                <a class="logo" href="Foodtest.html"><img src="images/logo.png" alt="" height="50px" width="80px"></a>
             </div>  
         </nav>
         <div id="mySidenav" class="sidenav">
-            <a href="https://www.facebook.com" id="about"><img src="images/IMG_5826.PNG" alt="" width="30%" height="10%"></a>
+            <a href="https://www.facebook.com" id="about"><img src="images/facebook logo.PNG" alt="" width="30%" height="10%"></a>
             <a href="https://www.instagram.com" id="blog"><img src="images/iglogo.jpg" alt="" width="55px" height="35px"></a>
             <a href="https://www.twitter.com" id="projects"><img src="images/twitter.png" alt=""width="70px" height="35px"></a>
         </div>
-       
-            <div class="slideshow-container">
+        <div class="Opening">
+            <img src="images/shop2.jpg" alt="shop view" width="100%" height="750px">
+        </div>
+        <div class="slideshow-container">
 
-                <div class="mySlides fade">
-                  
-                    <img src="images/fashion-banner.png" style="width:100%">
-                </div>
-    
-                <div class="mySlides fade">
-                   
-                    <img src="images/promotion-banner-png-promotional-banners.png" style="width:100%">
-                </div>
-    
-                <div class="mySlides fade">
-                    
-                    <img src="images/Student PROMO.png" style="width:100%">
-                </div>
-    
-                <div class="mySlides fade">
-                    
-                    <img src="images/Couple Promotion.png" style="width:100%">
-                </div>
-    
-                <a class="prev" onclick="plusSlides(-1)">❮</a>
-                <a class="next" onclick="plusSlides(1)">❯</a>
-                    
-            </div>
-                <br>
+            <div class="mySlides fade">
                 
-                <div style="text-align:center">
-                  <span class="dot" onclick="currentSlide(1)"></span> 
-                  <span class="dot" onclick="currentSlide(2)"></span> 
-                  <span class="dot" onclick="currentSlide(3)"></span> 
-                  <span class="dot" onclick="currentSlide(4)"></span> 
-                </div>
-                </div>   
+                <a href="promotion.html"><img src="images/banner.png" style="width:100%"></a>
+            </div>
+
+            <div class="mySlides fade">
+                
+                <a href="promotion.html"><img src="images/promo frappe.png" style="width:100%"></a>
+            </div>
+
+            <div class="mySlides fade">
+                
+                <a href="promotion.html"><img src="images/Student PROMO.png" style="width:100%"></a>
+            </div>
+
+            <div class="mySlides fade">
+                
+                <a href="promotion.html"><img src="images/Couple Promotion.png" style="width:100%"></a>
+            </div>
+
+            <div class="mySlides fade">
+
+                <a href="promotion.html"><img src="images/banner2.png" style="width:100%"></a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)"></a>
+            <a class="next" onclick="plusSlides(1)"></a>
+                
+        </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="currentSlide(4)"></span> 
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+        </div>   
              
             
     </div>
     <div class="content">
         <main>
             <h2>
-                Enjoy Your Time Here
+                Choose what to enjoy Today!
             </h2>
             <div class="Options">
                 <a href="food.html"><video src="video/food.mp4" type="video/mp4" loop class="vid" muted  > </a>
@@ -167,8 +200,78 @@
             }
     </script>
     <footer>
-        <div class="footer">
-            <strong> Copyright&copy;2022. All Rights Reserved.Privacy Policy </strong>
+        <form action="https://www.w3schools.com/action_page.php">
+            <div class="footerlogo">
+                <a href="https://www.facebook.com"><img src="images/facebook logo 2.png" alt="" width="55px" height="55px"></a>
+                <a href="https://www.instagram.com"><img src="images/instagram logo 2.webp" alt="" width="55px" height="55px"></a>
+                <a href="https://www.twitter.com"><img src="images/twitter.png" alt=""width="55px" height="55px"></a>
+            </div>
+            <div class="sub">
+                <h4>SUBSCRIBE US</h4>
+                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+                <br><br>
+                <input type="submit" value="SUBSCRIBE">
+            </div>
+        </form>
+        <div class="footerright">
+            <ul>
+                <li class="footerwidth"><a href="drinks.html">OUR DRINKS</a></li>
+                <li class="footerwidth"><a href="food.html">OUR FOOD</a></li>
+                <li class="footerwidth"><a href="promotion.html">CURRENT PROMOTION</a></li>
+                <li class="footerwidth"><a href="location.html">OUR LOCATION</a></li>
+                <li class="footerwidth"><a href="aboutus.html">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="footerlink">
+            <strong>E-MAIL US : </strong>
+            <small>
+                <ul>
+                    <li><a href="maininfo@lekcofee.my">maininfo@lekcofee.my</a></li>
+                    <li><a href="penanginfo@lekcoffee.my">penanginfo@lekcoffee.my</a></li>
+                    <li><a href="perakinfo@lekcoffee.my">perakinfo@lekcoffee.my</a></li>
+                </ul>
+            </small>
+            <strong >CALL US : </strong>
+            <small>
+                <ul>
+                    <li>KL main branch: (6)03-41450123</li>
+                    <li>Penang branch : (6)04-8995230</li>
+                    <li>Perak branch  : (6)011-10758513</li>
+                </ul>
+            </small>
+        </div>
+        <div class="footerlocation">
+            <strong>LOCATION</strong>
+            <ul>
+                <li>
+                    <b>Kuala Lumpur Branch</b> <br>
+                    <small>
+                        Jalan Genting Kelang, Setapak, <br>
+                        53300 Kuala Lumpur, <br>
+                        P.O. Box 10979, 50932 Kuala Lumpur, Malaysia.
+                    </small>
+                </li>
+                <li>
+                    <b>Penang Branch</b><br>
+                    <small>
+                        77, Lorong Lembah Permai Tiga,<br>
+                        11200 Tanjong Bungah,<br>
+                        Pulau Pinang, Malaysia.
+                    </small>
+                </li>
+                <li>
+                    <b>Perak Branch</b><br>
+                    <small>
+                        Jalan Kolej, Taman Bandar Baru,<br>
+                        31900 Kampar, Perak, Malaysia.
+                    </small>
+                </li>
+            </ul>
+        </div>
+        <div class="footercopyright">
+            <small>
+                Copyright&copy;2022. All Rights Reserved.Privacy Policy
+            </small>
         </div>
     </footer>
 </body>
