@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lek Coffee Promotion</title>
-    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="lekcoffee.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <style>
         .promotion{
-            background-color: #E7C1B8;            
+            color: rgb(209, 163, 163);;          
         }  
         h1{
             text-align: center;
+            
         }
         .promowrapper{
             display: flex;
@@ -21,36 +22,14 @@
         }
         .promo{
             padding: 0.5em  0.5em  0.5em;
-            
         }
         .promo img{
             width: 80%;
+            box-shadow: 10px 10px 20px grey;
+            border-radius: 20px;
+            border:#393E46 5px solid;
         }
-        form{
-            float: left;
-            padding-top: 15px;
-            padding-left: 1%;
-            padding-right: 5px;
-            width: 40%;
-            padding-bottom: 3%;
-        }
-        input[type=email] {
-            width: 50%;
-            padding: 0.75em 200%;
-            display: inline-block;
-            box-sizing: border-box;
-        }
-        input[type=submit] {
-            background-color: #E7C1B8;
-            margin-left: 0.625em;
-        }
-        h4{
-            padding-top: 50px;
-            text-align: left;
-        }
-        strong {
-            font-size: large;
-        }
+     
     </style>
 </head>
 <body>
@@ -68,62 +47,67 @@
                 <a class="promotion" href="promotion.html">Promotion</a>
                 <a class="location" href="location.html">Our Location</a>
                 <a class="aboutus" href="aboutus.html">About Us</a>
-                <a class="logo" href="index.html"><img src="images/logo.png" alt="" height="50px" width="80px"></a>
+                <a class="logo" href="index.html"><img src="images/logo.png" alt="logo" height="90" width="100"></a>
             </div>  
         </nav>  
         <div id="mySidenav" class="sidenav">
-            <a href="https://www.facebook.com" id="about"><img src="images/facebook logo.PNG" alt="" width="30%" height="10%"></a>
-            <a href="https://www.instagram.com" id="blog"><img src="images/iglogo.jpg" alt="" width="55px" height="35px"></a>
-            <a href="https://www.twitter.com" id="projects"><img src="images/twitter.png" alt=""width="70px" height="35px"></a>
+            <a href="https://www.facebook.com/profile.php?id=100088681396447&mibextid=ZbWKwL" id="facebook"><img src="images/facebook_logo.PNG" alt="facebook logo" width="30" height="35"></a>
+            <a href="https://www.instagram.com/lekcoffee2022/" id="insta"><img src="images/iglogo.jpg" alt="instagram logo" width="55" height="35"></a>
+            <a href="https://twitter.com/lek_coffee?t=-txtkzkvlUcWqMg-_BVrPg&s=09" id="twitter"><img src="images/twitter.png" alt="twitter logo" width="70" height="35"></a>
         </div>
     </div>
-    <div class="Opening">
-        <img src="images/promotionbanner.png" alt="shop view" width="100%" height="750px">
+    <div class="banner">
+        <img src="images/promotionbanner.png" alt="shop view">
     </div>
-    <h1>Promotions</h1>
-    <h2>Offers Now!</h2>
+    <br><br>
+    <!-- to show what promotion is on going -->
+    <h1>Offers Now!</h1>
+    <br><br>
     <div class="promowrapper">
         
         <div class="promo">
-            <img src="images/promo1.png">
+            <img src="images/promo1.png" alt="30% coffee"> 
         </div>
 
         <div class="promo">
-            <img src="images/promo2.png">
+            <img src="images/promo2.png" alt="opening promo">
         </div>
         <div class="promo">
-            <img src="images/promo3.png">
+            <img src="images/promo3.png" alt="today's special">
         </div>
     </div>
+    <br><br><br>    
     <div class="promowrapper">
         
         <div class="promo">
-            <img src="images/promo4.png">
+            <img src="images/promo4.png" alt="special cake">
         </div>
 
         <div class="promo">
-            <img src="images/promo5.png">
+            <img src="images/promo5.png" alt="delicious toast">
         </div>
         <div class="promo">
-            <img src="images/promo6.png">
+            <img src="images/promo6.png" alt="greentea">
         </div>
     </div>
+    <br><br><br>
     <footer>
-        <form action="https://www.w3schools.com/action_page.php">
-            <div class="footerlogo">
-                <a href="https://www.facebook.com"><img src="images/facebook logo 2.png" alt="" width="55px" height="55px"></a>
-                <a href="https://www.instagram.com"><img src="images/instagram logo 2.webp" alt="" width="55px" height="55px"></a>
-                <a href="https://www.twitter.com"><img src="images/twitter.png" alt=""width="55px" height="55px"></a>
+        <div class="footersocial">
+            <div class="footerlogo"> <!-- user can click on the icon to see our social account -->
+                <a href="https://www.facebook.com/profile.php?id=100088681396447&mibextid=ZbWKwL"><img src="images/facebook_logo2.png" alt="facebook logo" width="55" height="55" style="border-radius: 20px;"></a>
+                <a href="https://www.instagram.com/lekcoffee2022/"><img src="images/instagram_logo2.webp" alt="instagram logo" width="55" height="55"></a>
+                <a href="https://twitter.com/lek_coffee?t=-txtkzkvlUcWqMg-_BVrPg&s=09"><img src="images/twitter.png" alt="twitter logo" width="55" height="55"></a>
             </div>
-            <div class="sub">
-                <h4>SUBSCRIBE US</h4>
-                <input type="email" name="email" id="email" placeholder="Enter your email address" required>
+            <form action="https://www.w3schools.com/action_page.php">
+                <h4>SUBSCRIBE US</h4> <!-- user can subscribe us by insert their e-mail address -->
+                <input type="email" name="email" id="email" placeholder="Enter your e-mail address" required>
                 <br><br>
-                <input type="submit" value="SUBSCRIBE">
-            </div>
-        </form>
-        <div class="footerright">
-            <ul>
+                <input type="submit" value="SUBSCRIBE"> <!--  user can click the button to comfirm subscribe us -->
+            </form>
+        </div>
+            
+        <div class="footernav">
+            <ul> <!-- user can click the text easily to the page they wanted -->
                 <li class="footerwidth"><a href="drinks.html">OUR DRINKS</a></li>
                 <li class="footerwidth"><a href="food.html">OUR FOOD</a></li>
                 <li class="footerwidth"><a href="promotion.html">CURRENT PROMOTION</a></li>
@@ -131,28 +115,24 @@
                 <li class="footerwidth"><a href="aboutus.html">ABOUT US</a></li>
             </ul>
         </div>
-        <div class="footerlink">
+        <div class="footercontact">
             <strong>E-MAIL US : </strong>
-            <small>
-                <ul>
-                    <li><a href="maininfo@lekcofee.my">maininfo@lekcofee.my</a></li>
-                    <li><a href="penanginfo@lekcoffee.my">penanginfo@lekcoffee.my</a></li>
-                    <li><a href="perakinfo@lekcoffee.my">perakinfo@lekcoffee.my</a></li>
-                </ul>
-            </small>
+            <ul> <!-- user can direct e-mail us by click the text. -->
+                <li><small><a href="mailto:maininfo@lekcofee.my">maininfo@lekcofee.my</a></small></li>
+                <li><small><a href="mailto:penanginfo@lekcoffee.my">penanginfo@lekcoffee.my</a></small></li>
+                <li><small><a href="mailto:perakinfo@lekcoffee.my">perakinfo@lekcoffee.my</a></small></li>
+            </ul>    
             <strong >CALL US : </strong>
-            <small>
-                <ul>
-                    <li>KL main branch: (6)03-41450123</li>
-                    <li>Penang branch : (6)04-8995230</li>
-                    <li>Perak branch  : (6)011-10758513</li>
-                </ul>
-            </small>
+            <ul> <!-- user can direct call our branches by click the phone number --> 
+                <li><small>KL main branch: <a href="tel:+(6)03-41450123">(6)03-41450123</a></small></li>
+                <li><small>Penang branch : <a href="tel:+(6)04-8995230">(6)04-8995230</a></small> </li>
+                <li><small>Perak branch  : <a href="tel:+(6)011-10758513">(6)011-10758513</a></small></li>
+            </ul>
         </div>
         <div class="footerlocation">
             <strong>LOCATION</strong>
-            <ul>
-                <li>
+            <ul> <!-- to show our branches address -->
+                <li> 
                     <b>Kuala Lumpur Branch</b> <br>
                     <small>
                         Jalan Genting Kelang, Setapak, <br>
@@ -177,9 +157,12 @@
                 </li>
             </ul>
         </div>
+        <audio controls autoplay hidden> <!-- when user get into this web page will auto play the song -->
+            <source src="images/Christmassong.mp3" type="audio/mpeg">
+        </audio>
         <div class="footercopyright">
             <small>
-                Copyright&copy;2022. All Rights Reserved.Privacy Policy
+                Copyright&copy;2022. All Rights Reserved. Privacy Policy
             </small>
         </div>
     </footer>
