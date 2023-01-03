@@ -22,7 +22,7 @@
         }
         .maindrink{
            text-align: left;
-           font-size: x-large;
+           font-size: xx-large;
            padding-left: 10px;
            width: 20%;
            font-weight: bold; 
@@ -34,13 +34,16 @@
             vertical-align: top;
             font-style: italic;
             font-size: large;
+            color: #000000;
         }
         .price{
             text-align: right;
             padding:0px 30px;
             width: 5%;
             vertical-align: top;
-            padding-top: 70px;
+            padding-top: 40px;
+            color:#080485;
+            font-size: x-large;
         }
         .drinkname{
             text-align: left;
@@ -54,7 +57,8 @@
         .drinkdetails{
             font-size: large;
             font-style: italic;
-            font-weight: normal;    
+            font-weight: normal;
+            color: #000000;
         }
         table{
             width:95%;
@@ -79,8 +83,8 @@
         box-shadow: 7px 7px 20px grey;
         border-radius: 10px;
        }
-       .maindrink, .description, .price, .drinkname{
-        color: #BE1E27;
+       .maindrink, .drinkname{
+        color: #080485;
        }
        .title::after,.title::before{
             background-color: #393E46;
@@ -90,7 +94,7 @@
             position: relative;
             vertical-align: middle;
             width: 30%;
-      }
+        }
     </style>
 </head>
 <body>
@@ -124,78 +128,68 @@
                 <table>
                     <!-- menu of coffee series -->
                     <tr>
-                        <th colspan="10"><br><br><br><span class="title"> Coffee Series </span><br><br><img src="images/drink1.png" alt="coffee"><!-- to show the coffee image --></th>
+                        <th colspan="8"><br><br><span class="title"> Coffee Series </span><br><br><img src="images/drink1.png" alt="coffee"><!-- to show the coffee image --></th>
                     </tr>
                     <tr>
-                        <td class="description"></td>   
-                        <td class="price" ></td>
+                        <td class="maindrink" style="vertical-align: bottom;" rowspan="2"> Frisco Frappe &#128077; &#128293; &#129482;</td> 
+                        <td class="price" style="vertical-align: bottom;" rowspan="2"> RM8.50</td>
                         <td class="drinkname" >Asian Dolce Latte &#9749;
-                            <br> <span class="drinkdetails">The new smooth and velvety textured latte with an Asian twist.</span>
-                        </td>
+                            <br> <span class="drinkdetails">Smooth and velvety textured latte with an Asian twist.</span>
+                        </td>                                                           
                         <td class="price" > RM9.80</td>
-                        <td class="drinkname" rowspan="1">Cold Foam Iced Espresso &#129482;
+                        <td class="drinkname" >Espresso Frappuccino
+                            <br> <span class="drinkdetails">A blend of espresso, coffee, whole milk, and ice.</span>
+                        </td>
+                        <td class="price" > RM8.20</td>
+                        <td class="drinkname">Caramel Frappuccino
+                            <br> <span class="drinkdetails">A blend of espresso with caramel syrup, milk, and ice.</span>
+                        </td>
+                        <td class="price" > RM8.00</td>
+                    </tr>
+                    <tr>
+                        <td class="drinkname">Cold Foam Iced Espresso &#129482;
                             <br> <span class="drinkdetails">Shaken espresso with creamy nonfat milk cold foam.</span>
                         </td>
-                        <td class="price" > RM9.00</td>
-                        <td class="drinkname" >x2-Shot Iced Shaken Espresso &#129482;
-                            <br> <span class="drinkdetails">Two fresh shots of espresso, hand shaken with classic syrup and ice, finished with low fat milk mixed with sweetened whipped cream.</span>
-                        </td>
                         <td class="price" >RM10.00</td>
-                        <td class="drinkname" >Caramel Frappuccino
-                            <br> <span class="drinkdetails">A blend of espresso with caramel syrup, milk, and ice until it becomes a chunky, icy drink.</span>
-                        </td>
-                        <td class="price" > RM8.00</td>
-                    </tr>
-                    <tr>
-                        <td class="maindrink" style="vertical-align: bottom;"> Frisco Frappe &#128077; &#128293; &#129482;</td> 
-                        
-                        <td class="price" style="vertical-align: bottom;"> RM8.50</td>
-                        <td class="drinkname" >Espresso Frappuccino
-                            <br> <span class="drinkdetails">A shot of espresso, coffee, whole milk, and ice are blended with a Frappuccino base syrup until smooth.</span>
-                        </td>
-                        <td class="price" > RM8.00</td>
                         <td class="drinkname" >Iced Caramel Macchiato &#129482;
-                            <br> <span class="drinkdetails">Rich espresso, milk, vanilla syrup and plentiful ice topped with caramel for a delightfully refreshing start to your day.</span>
+                            <br> <span class="drinkdetails">Rich espresso, milk, vanilla syrup and plentiful ice topped with caramel.</span>
                         </td>
                         <td class="price" > RM8.00</td>
                         <td class="drinkname" >Caramel Macchiato
-                            <br> <span class="drinkdetails">Rich espresso, milk and vanilla syrup are topped with caramel for a delightfully refreshing start to your day.</span>
+                            <br> <span class="drinkdetails">Rich espresso, milk and vanilla syrup are topped with caramel.</span>
                         </td>
                         <td class="price" > RM8.00</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="description" rowspan="2">Creamy frozen blended chocolate or vanilla.</td>
+                        <td class="price" rowspan="2"></td>
+                        <td class="drinkname" >Flat White &#9749;
+                            <br> <span class="drinkdetails">A blend of micro-foamed milk poured over shots of espresso.</span>
+                        </td>
+                        <td class="price" > RM9.00</td>
+                        <td class="drinkname" >Peppermint Mocha
+                            <br> <span class="drinkdetails">Creamy latte full of mint and chocolate, finished with vanilla whipped cream.</span>
+                        </td>
+                        <td class="price" > RM8.50</td>
                         <td class="drinkname" >Dark Mocha Frappuccino &#129482;
-                            <br> <span class="drinkdetails">Coffee, cocoa, with rich chocolatey chips blended with milk and ice. Well deserving of two enthusiastic thumbs up.</span>
+                            <br> <span class="drinkdetails">Coffee with rich chocolate chips blended with cocoa, milk and ice.</span>
                         </td>
                         <td class="price" > RM9.00</td>
                     </tr>
                     <tr>
-                        <td class="description" >Creamy frozen blended chocolate or vanilla.</td>
-                        
-                        <td class="price" ></td>
-                        <td class="drinkname" >Flat White &#9749;
-                            <br> <span class="drinkdetails">A blend of micro-foamed milk poured over a single or double shot of espresso.</span>
+                        <td class="drinkname" >x2-Shot Iced Shaken Espresso &#129482;
+                            <br> <span class="drinkdetails">Two shots of espresso hand shaken, with milk and whipped cream.</span>
                         </td>
                         <td class="price" > RM9.00</td>
                         <td class="drinkname" >Salted Caramel Cloud Macchiato
-                            <br> <span class="drinkdetails">Lusciously light and airy with layers of fluffy foam, cascading espresso, swirls of salted caramel flavoured syrup and a crosshatch of sauce on top.</span>
+                            <br> <span class="drinkdetails">Topped with foam, espresso, and salted caramel.</span>
                         </td>
                         <td class="price" > RM8.90</td>
-                        <td class="drinkname" >Peppermint Mocha
-                            <br> <span class="drinkdetails">Creamy latte full of mint and chocolate, finished with light and fluffy vanilla whipped cream.</span>
-                        </td>
-                        <td class="price" > RM8.50</td>
                         <td class="drinkname" >White Chocolate Mocha
-                            <br> <span class="drinkdetails">Signature espresso meets white chocolate sauce and steamed milk, and then is finished off with sweetened whipped cream.</span>
+                            <br> <span class="drinkdetails">Espresso mixed with white chocolate, milk and whipped cream.</span>
                         </td>
                         <td class="price" > RM8.50</td>
-                    </tr>
-                    <tr>
-                        <td class="description"></td>
-                        <td class="price" ></td>
-                        <td class="drinkname" >Cappuccino &#9749;
-                            <br> <span class="drinkdetails">An Italian coffee drink traditionally prepared with equal parts double espresso, steamed milk, and steamed milk foam on top.</span>
-                        </td>
-                        <td class="price" > RM7.50</td>
-                        <td></td><td></td><td></td><td></td><td></td><td></td>
                     </tr>
                 </table>
             </div>
@@ -221,7 +215,7 @@
                         <td class="description">Chocolate shaken with milk and cream on top.</td>
                         <td class="price"></td>
                         <td class="drinkname" > Vanilla Milkshake
-                            <br> <span class="drinkdetails">A smooth and creamy concoction of vanilla ice cream, milk, vanilla extract.</span>
+                            <br> <span class="drinkdetails">A creamy concoction of vanilla ice cream, milk, vanilla extract.</span>
                         </td>
                         <td class="price" > RM8.00</td>
                         <td class="drinkname" > Chocolate Shake
@@ -270,7 +264,7 @@
                 <a href="https://www.instagram.com/lekcoffee2022/"><img src="images/instagram_logo2.webp" alt="instagram logo" width="55" height="55"></a>
                 <a href="https://twitter.com/lek_coffee?t=-txtkzkvlUcWqMg-_BVrPg&s=09"><img src="images/twitter.png" alt="twitter logo" width="55" height="55"></a>
             </div>
-            <form action="https://www.w3schools.com/action_page.php">
+            <form action="subscribe.html">
                 <h4>SUBSCRIBE US</h4> <!-- user can subscribe us by insert their e-mail address -->
                 <input type="email" name="email" id="email" placeholder="Enter your e-mail address" required>
                 <br><br>
