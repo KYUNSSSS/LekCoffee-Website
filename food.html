@@ -4,75 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lek Coffee Food Menu</title>
+    <title>Lek Coffee Drink Menu</title>
     <link rel="stylesheet" href="lekcoffee.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <style>
-        .dropbtn{
+        .drinkmenu, .dropbtn{
             color: rgb(209, 163, 163); 
-        }
-        .foodmenu:hover{
-            background-color: #393E46;
-            color: #020100;
-        }
+        }         
         h1,h2,h3{
             text-align: unset;
             margin: 0;
         }
-        .maindish , .pasta , .bites , .cakes{
+        .coffee , .milkshake , .tea , .cakes{
             width: 95%;
             margin: auto;
             border-top: 20px;
         }
-        .mainfood{
-        text-align: left;
-        font-size: x-large;
-        padding-left: 10px;
-        width: 30%;
-        font-weight: bold; 
+        .maindrink{
+           text-align: left;
+           font-size: xx-large;
+           padding-left: 10px;
+           width: 20%;
+           font-weight: bold; 
         }
         .description{
             text-align: left;
             padding-left: 15px;
-            width: 30%;
+            width: 20%;
             vertical-align: top;
             font-style: italic;
             font-size: large;
+            color: #000000;
         }
         .price{
             text-align: right;
-            padding: 0px 50px;
-            width: 10%;
-            font-size: large;
+            padding:0px 30px;
+            width: 5%;
+            vertical-align: top;
+            padding-top: 40px;
+            color:#080485;
+            font-size: x-large;
         }
-        .foodname{
+        .drinkname{
             text-align: left;
             padding-left: 15px;
             width: 20%;
             font-size: x-large;
-            font-weight: bold; 
-            padding-top: 50px;
+            font-weight: bold;
+            padding-top: 40px;
             vertical-align: top;
         }
-        .fooddetails{
+        .drinkdetails{
             font-size: large;
             font-style: italic;
-            font-weight: normal;    
+            font-weight: normal;
+            color: #000000;
         }
         table{
-            width:90%;
+            width:95%;
             padding-top: 10px;
             padding-bottom: 20px;
-            
         }
         th{
-            height: 30% ;
+            height: 30%;
             font-size: xx-large;
+            color: #393E46;
             padding-bottom: 20px;
             padding-top: 5px;
         }
-
-        .title::after,.title::before{
+        td{
+            height: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        table th img{
+        height: 3%;
+        width: 100%;
+        box-shadow: 7px 7px 20px grey;
+        border-radius: 10px;
+       }
+       .maindrink, .drinkname{
+        color: #080485;
+       }
+       .title::after,.title::before{
             background-color: #393E46;
             content: "";
             display: inline-block;
@@ -80,35 +94,19 @@
             position: relative;
             vertical-align: middle;
             width: 30%;
-    }
-    .title{
-        color: #393E46;
-    }
-        td{
-            height: 100px;
         }
-    th img{
-        height: 3%;
-        width: 100%;
-        box-shadow: 10px 10px 20px grey;
-        border-radius: 10px;
-        border:#393E46 5px solid;
-    }
-    .mainfood, .description, .price, .foodname{
-        color: #BE1E27;
-    }
     </style>
 </head>
 <body>
     <div class="container">
         <nav>
-            <div class="bar"> <!-- Navigatiom fixed at the top of the page -->
+            <div class="bar">
                 <a class="home" href="index.html">Home</a>
-                <div class="dropdown"> 
+                <div class="dropdown">
                     <button class="dropbtn">Our Menu</button>
                     <div class="dropdown-content">
-                    <a class="foodmenu" href="food.html" style="color: rgb(209, 163, 163);">Food</a>
-                    <a class="drinkmenu" href="drinks.html">Drink</a>
+                    <a class="foodmenu" href="food.html">Food</a>
+                    <a class="drinkmenu" href="drinks.html" style="color: rgb(209, 163, 163); ">Drink</a>
                     </div>
                 </div>
                 <a class="promotion" href="promotion.html">Promotion</a>
@@ -117,153 +115,148 @@
                 <a class="logo" href="index.html"><img src="images/logo.png" alt="logo" height="90" width="100"></a>
             </div>  
         </nav>  
-        <div>
-            <div id="mySidenav" class="sidenav">
-                <a href="https://www.facebook.com/profile.php?id=100088681396447&mibextid=ZbWKwL" id="facebook"><img src="images/facebook_logo.PNG" alt="facebook logo" width="30" height="35"></a>
-                <a href="https://www.instagram.com/lekcoffee2022/" id="insta"><img src="images/iglogo.jpg" alt="instagram logo" width="55" height="35"></a>
-                <a href="https://twitter.com/lek_coffee?t=-txtkzkvlUcWqMg-_BVrPg&s=09" id="twitter"><img src="images/twitter.png" alt="twitter logo" width="70" height="35"></a>
-            </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="https://www.facebook.com/profile.php?id=100088681396447&mibextid=ZbWKwL" id="facebook"><img src="images/facebook_logo.PNG" alt="facebook logo" width="30" height="35"></a>            
+            <a href="https://www.instagram.com/lekcoffee2022/" id="insta"><img src="images/iglogo.jpg" alt="instagram logo" width="55" height="35"></a>
+            <a href="https://twitter.com/lek_coffee?t=-txtkzkvlUcWqMg-_BVrPg&s=09" id="twitter"><img src="images/twitter.png" alt="twitter logo" width="70" height="35"></a>
+        </div>
+        <main>
             <div class="banner">
-                <img src="images/foodbanner.png" alt="shop view">
+                <img src="images/drinksbannerpng.png" alt="shop view">
             </div>
-        </div>
-        <div class="maindish">
-            <table>
-                <!-- menu of main dish -->
-                <tr>
-                    <th colspan="6"><br><br><br><span class="title"> Main Dish </span><br><br><img src="images/foodd.png" alt="foodchops"><!-- to show the main dish image --></th>
-                <tr>
-                    <td class="mainfood">Chicken Chop&#128077;</td>    
-                    <td class="price"> RM18.00</td>
-                    <td class="foodname">Beef Chop <br>
-                        <span class="fooddetails">Grilled beefchop with frech fries, served with black pepper or barbecue sauce.</span>
-                    </td>
-                    <td class="price"> RM28.00</td>
-                    <td class="foodname">Lamb Chop <br>
-                        <span class="fooddetails">Grilled Lambchop with Wedges, served with black pepper sauce.</span>
-                    </td>
-                    <td class="price"> RM28.00</td>
-                </tr>
-                <tr>
-                    <td class="description">Fried chickenchop with frech fries and colesaw, served with black pepper or mushroom sauce.</td>
-                    <td class="price"></td>
-                    <td class="foodname">Pork Chop <br>
-                        <span class="fooddetails">Grilled porkchop with frech fries, served with black pepper or barbecue sauce.</span>
-                    </td>
-                    <td class="price"> RM28.00</td>
-                    <td class="foodname">Fish and Chip with Fries<br>
-                        <span class="fooddetails">Fried Fish and CHip with french fries, served with lemon or black pepper sauce.</span>
-                    </td>
-                    <td class="price"> RM18.00</td>
-                </tr>
-            </table>
-        </div>
-        <div class="pasta">
-            <table>
-                <!-- menu of pasta series -->
-                <tr>
-                    <th colspan="6"><br><br><span class="title"> Pasta Series</span><br><br><img src="images/foodd2.png" alt="pasta"><!-- to show the pasta image --></th>
-                </tr>
-                <tr>
-                    <td class="mainfood">Spaghetti Carbonara &#128077; &#127837;</td>    
-                    <td class="price"> RM16.00</td>
-                    <td class="foodname">Spaghetti Bolognese &#127837;
-                        <br> <span class="fooddetails">spaghetti with an Italian meat sauce made with minced beef, bacon and tomatoes, served with Parmesan cheese.</span>
-                    </td>
-                    <td class="price"> RM16.00</td>
-                    <td class="foodname">Seafood Spaghetti with Mussels and Shrimp &#127837;
-                        <br> <span class="fooddetails">Spaghetti with shrimp and mussels and an extremely simple tomato sauce.</span>
-                    </td>
-                    <td class="price"> RM25.00</td>
-                </tr>
-                <tr>
-                    <td class="description">Spaghetti with bacon and a creamy sauce made from eggs, Pecorino or Parmesan and black pepper.</td>
-                    <td class="price"></td>
-                    <td class="foodname">Stir-Fried Spaghetti with Salted Egg and Squid &#127837;
-                        <br> <span class="fooddetails">Spaghetti fried with salted egg yolk, squid and chilis.</span>
-                    </td>
-                    <td class="price"> RM25.00</td>
-                    <td class="foodname" >Spaghetti Tomato Sauce with Hamburg and Cheese &#127837;
-                        <br> <span class="fooddetails">Spaghetti with hamburg and cheese, served with tomato sauce.</span>
-                    </td>
-                    <td class="price">RM25.00</td>
-                </tr>
-            </table>
-        </div>
-        <div class="bites">
-            <table>
-                <!-- menu of small bites -->
-                <tr>
-                    <th colspan="6"><br><br><span class="title"> Small Bites </span><br><br><img src="images/foodd3.png" alt="small bites"><!-- to show the small bites image --></th>
-                </tr>
-                <tr>
-                    <td class="mainfood" >Grilled Sandwich &#128077;</td>    
-                    <td class="price" > RM8.00</td>
-                    <td class="foodname" >Garlic Bread
-                        <br> <span class="fooddetails">French bun with garlic on top baked togather.</span>
-                    </td>
-                    <td class="price" > RM8.00</td>
-                    <td class="foodname" >Polo Bun
-                        <br> <span class="fooddetails">The bun is soft and slightly sweet and its topped with a golden crunchy, crumbly crust.</span>
-                    </td>
-                    <td class="price"> RM5.00</td>
-                </tr>
-                <tr>
-                    <td class="description">Grilled bread with ham, egg, tomato slice, cucumber slice and butter.</td>
-                    <td class="price" rowspan="2"></td>
-                    <td class="foodname" > Sunday Folks Waffle
-                        <br> <span class="fooddetails">Waffle with Chocolate flavour ice-cream and Koko Kruch.</span>
-                    </td>
-                    <td class="price"> RM15.00</td>
-                    <td class="foodname">Polo Bun with Butter
-                        <br> <span class="fooddetails">The bun is soft and slightly sweet and its topped with a golden crunchy, crumbly crust with butter inside.</span>
-                    </td>
-                    <td class="price"> RM6.00</td>
-                </tr>
-                <tr>
-                    <td class="description"></td>
-                    <td class="foodname">Sugared Donut
-                        <br> <span class="fooddetails">A donut with fine sugar topping.</span>
-                    </td>
-                    <td class="price"> RM5.00</td>
-                    <td></td><td></td>
-                </tr>
-            </table>
-        </div>
-        <div class="cakes">
-            <table>
-                <!-- menu of cakes -->
-                <tr>
-                    <th colspan="6"><br><br><span class="title"> Cakes </span><br><br><img src="images/foodd4.png" alt="cakes"><!-- to show the cakes image --></th>
-                </tr>
-                <tr>
-                    <td class="mainfood">Chocolate Cake &#128077; &#127856;</td>    
-                    <td class="price">RM12.00</td> 
-                    <td class="foodname">Lemon Cheese Cake &#127856;
-                        <br> <span class="fooddetails">This lemon cheesecake recipe is made of a creamy, smooth and tart lemon cheesecake filling topped with a thin layer of puckering tangy lemon curd.</span>
-                    </td>
-                    <td class="price"> RM12.00</td>
-                    <td class="foodname">Mango Cheese cake &#127856;
-                        <br> <span class="fooddetails">Mango Cheesecake with a shortbread cookie crust, topped with sweet, tangy mango curd and slices of fresh mango.</span>
-                    </td>
-                    <td class="price"> RM12.00</td>
-                </tr>
-                <tr>
-                    <td class="description">Chocolate cake is a cake flavored with melted chocolate, Hershey's cocoa powder.</td>
-                    <td class="price"></td>
-                    <td class="foodname">Chocolate Java Cake &#127856;
-                        <br> <span class="fooddetails">A chocolate cake centre with chocolate sauce likes a lava flow out when you open it.</span>
-                    </td>
-                    <td class="price"> RM12.00</td>
-                    <td class="foodname">White Chocolate Mocha Layer Cake &#127856;
-                        <br> <span class="fooddetails">This white chocolate mocha layer cake pairs tender white chocolate espresso cake layers with a whipped white chocolate ganache and silky espresso buttercream.</span>
-                    </td>
-                    <td class="price"> RM12.00</td>
-                </tr>
-            </table>
-        </div>
+            <div class="coffee">
+                <table>
+                    <!-- menu of coffee series -->
+                    <tr>
+                        <th colspan="8"><br><br><span class="title"> Coffee Series </span><br><br><img src="images/drink1.png" alt="coffee"><!-- to show the coffee image --></th>
+                    </tr>
+                    <tr>
+                        <td class="maindrink" style="vertical-align: bottom;" rowspan="2"> Frisco Frappe &#128077; &#128293; &#129482;</td> 
+                        <td class="price" style="vertical-align: bottom;" rowspan="2"> RM8.50</td>
+                        <td class="drinkname" >Asian Dolce Latte &#9749;
+                            <br> <span class="drinkdetails">Smooth and velvety textured latte with an Asian twist.</span>
+                        </td>                                                           
+                        <td class="price" > RM9.80</td>
+                        <td class="drinkname" >Espresso Frappuccino
+                            <br> <span class="drinkdetails">A blend of espresso, coffee, whole milk, and ice.</span>
+                        </td>
+                        <td class="price" > RM8.20</td>
+                        <td class="drinkname">Caramel Frappuccino
+                            <br> <span class="drinkdetails">A blend of espresso with caramel syrup, milk, and ice.</span>
+                        </td>
+                        <td class="price" > RM8.00</td>
+                    </tr>
+                    <tr>
+                        <td class="drinkname">Cold Foam Iced Espresso &#129482;
+                            <br> <span class="drinkdetails">Shaken espresso with creamy nonfat milk cold foam.</span>
+                        </td>
+                        <td class="price" >RM10.00</td>
+                        <td class="drinkname" >Iced Caramel Macchiato &#129482;
+                            <br> <span class="drinkdetails">Rich espresso, milk, vanilla syrup and plentiful ice topped with caramel.</span>
+                        </td>
+                        <td class="price" > RM8.00</td>
+                        <td class="drinkname" >Caramel Macchiato
+                            <br> <span class="drinkdetails">Rich espresso, milk and vanilla syrup are topped with caramel.</span>
+                        </td>
+                        <td class="price" > RM8.00</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="description" rowspan="2">Creamy frozen blended chocolate or vanilla.</td>
+                        <td class="price" rowspan="2"></td>
+                        <td class="drinkname" >Flat White &#9749;
+                            <br> <span class="drinkdetails">A blend of micro-foamed milk poured over shots of espresso.</span>
+                        </td>
+                        <td class="price" > RM9.00</td>
+                        <td class="drinkname" >Peppermint Mocha
+                            <br> <span class="drinkdetails">Creamy latte full of mint and chocolate, finished with vanilla whipped cream.</span>
+                        </td>
+                        <td class="price" > RM8.50</td>
+                        <td class="drinkname" >Dark Mocha Frappuccino &#129482;
+                            <br> <span class="drinkdetails">Coffee with rich chocolate chips blended with cocoa, milk and ice.</span>
+                        </td>
+                        <td class="price" > RM9.00</td>
+                    </tr>
+                    <tr>
+                        <td class="drinkname" >x2-Shot Iced Shaken Espresso &#129482;
+                            <br> <span class="drinkdetails">Two shots of espresso hand shaken, with milk and whipped cream.</span>
+                        </td>
+                        <td class="price" > RM9.00</td>
+                        <td class="drinkname" >Salted Caramel Cloud Macchiato
+                            <br> <span class="drinkdetails">Topped with foam, espresso, and salted caramel.</span>
+                        </td>
+                        <td class="price" > RM8.90</td>
+                        <td class="drinkname" >White Chocolate Mocha
+                            <br> <span class="drinkdetails">Espresso mixed with white chocolate, milk and whipped cream.</span>
+                        </td>
+                        <td class="price" > RM8.50</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="milkshake">
+                <table>
+                    <!-- menu of milkshake series -->
+                    <tr>
+                        <th colspan="6"><br><br><span class="title"> Milkshake Series </span><br><br><img src="images/drink2.png" alt="milkshake"><!-- to show the milkshake image --></th>
+                    </tr>
+                    <tr>
+                        <td class="maindrink" style="vertical-align: bottom;">Chocolate Milkshake &#128077;</td>    
+                        <td class="price" style="vertical-align: bottom;">RM8.00</td>
+                        <td class="drinkname" > Chocolate Milkshake Smoothie
+                            <br> <span class="drinkdetails">A chocolate shake but topped with cocoa powders and chocolates.</span>
+                        </td>
+                        <td class="price" > RM9.00</td>
+                        <td class="drinkname" > Chocolate Milkshake Studio Shot Transparent
+                            <br> <span class="drinkdetails">A chocolate shake but topped with a whipped of fresh cream.</span>
+                        </td>
+                        <td class="price" > RM9.50</td>
+                    </tr>
+                    <tr>
+                        <td class="description">Chocolate shaken with milk and cream on top.</td>
+                        <td class="price"></td>
+                        <td class="drinkname" > Vanilla Milkshake
+                            <br> <span class="drinkdetails">A creamy concoction of vanilla ice cream, milk, vanilla extract.</span>
+                        </td>
+                        <td class="price" > RM8.00</td>
+                        <td class="drinkname" > Chocolate Shake
+                            <br> <span class="drinkdetails">The original flavour and everyone's favourite shake.</span>
+                        </td>
+                        <td class="price" > RM8.00</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tea">
+                <table>
+                    <!-- menu of tea series -->
+                    <tr>
+                        <th colspan="6"><br><br><span class="title"> Tea Series </span><br><br> <img src="images/drink3.png" alt="tea"><!-- to show the tea image --></th>
+                    </tr>
+                    <tr>
+                        <td class="maindrink" style="vertical-align: bottom;">Black Tea &#128077; &#127861;</td>    
+                        <td class="price" style="vertical-align: bottom;" >RM5.00</td>
+                        <td class="drinkname" >Tea with Mint &#127861;
+                            <br> <span class="drinkdetails">Herbal tea made by infusing mint leaves in hot water.</span>
+                        </td>
+                        <td class="price" > RM5.00</td>
+                        <td class="drinkname" > Cinnamon Green Tea &#127861;
+                            <br> <span class="drinkdetails">Green tea with cinnamon and ginger plus a touch of mint.</span>
+                        </td>
+                        <td class="price" > RM5.00</td>
+                    </tr>
+                    <tr>
+                        <td class="description">A tea with stronger taste and comes along with a dark hue.</td>
+                        <td class="price"></td>
+                        <td class="drinkname" >Honey Lemon Tea &#127861;
+                            <br><span class="drinkdetails">Lemon tea with a few spoons of honey.</span>
+                        </td>
+                        <td class="price" > RM7.00</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </main>
     </div>
-    <br><br>
     <footer>
         <div class="footersocial">
             <div class="footerlogo"> <!-- user can click on the icon to see our social account -->
@@ -271,7 +264,7 @@
                 <a href="https://www.instagram.com/lekcoffee2022/"><img src="images/instagram_logo2.webp" alt="instagram logo" width="55" height="55"></a>
                 <a href="https://twitter.com/lek_coffee?t=-txtkzkvlUcWqMg-_BVrPg&s=09"><img src="images/twitter.png" alt="twitter logo" width="55" height="55"></a>
             </div>
-            <form action="https://www.w3schools.com/action_page.php">
+            <form action="subscribe.html">
                 <h4>SUBSCRIBE US</h4> <!-- user can subscribe us by insert their e-mail address -->
                 <input type="email" name="email" id="email" placeholder="Enter your e-mail address" required>
                 <br><br>
